@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de inicio de sesión</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <form class="login_form" method="post" name="form" onsubmit="return validated()">
+      <h2>Iniciar sesión</h2>
+      <input autocomplete="off" type="text" placeholder="Nombre de usuario"  name="email" required>
+      <div id="error_email"> Por favor, Ingresa tu Email </div>
+      <input type="password" placeholder="Contraseña" name="password" required>
+      <div id="error_password"> Por favor, Ingresa tu contraseña </div>
+      <input type="submit" value="Iniciar sesión">
+      <p>¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+    </form>
+  </div>
+  <script src="scripts/valid.js"></script>
+</body>
+</html>
